@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/messagel1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/tabback"
+
+
+       >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xx"
+            android:onClick="backButton"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/blackColor"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Namefffff"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/topBarUsername"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is online"
+                >
+
+
+            </TextView>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/blackColor"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dd"
+            android:id="@+id/topBarUserDp"
+            android:onClick="topBarUserDpButton"
+            >
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messagel1"
+        android:id="@+id/rvchat"
+        android:padding="10dp"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radio_selector"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+
+        android:elevation="10dp"
+       >
+
+
+        <ImageButton
+            android:id="@+id/mediasend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cmsend"
+            android:layout_centerVertical="true"
+            >
+        </ImageButton>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendText"
+            android:hint="Type your message here..."
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@+id/mediasend"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+
+            android:orientation="vertical"
+            android:textSize="18dp"
+
+            >
+        </EditText>
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sendicon"
+            android:layout_centerVertical="true"
+
+            >
+        </ImageButton>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/dd"
+            android:id="@+id/displayProfPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="2dp"
+
+
+           />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@color/colorAccent"
+            app:civ_border_color="#fff"
+            app:civ_border_width="1dp"
+            android:layout_below="@+id/showGender"
+            android:layout_toRightOf="@id/displayProfPic"
+            android:layout_width="15dp"
+            android:layout_marginLeft="-18dp"
+            android:layout_height="15dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:id="@+id/online_icon"
+
+        />
+
+        <TextView
+            android:text="HELLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/showUsername">
+
+        </TextView>
+        <TextView
+            android:text="HELLO"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/showGender">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

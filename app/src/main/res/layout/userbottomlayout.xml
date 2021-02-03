@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/bSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sheetbackground"
+
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/line1"
+        android:id="@+id/line1"
+        >
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="User Profile"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/dd"
+            android:id="@+id/bottomPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+
+
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:text="Shehroz Wali Khan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/bottomName">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/phonelayout"
+
+                android:layout_below="@+id/bottomName"
+                >
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/phoneicon"
+                    >
+
+
+                </ImageView>
+                <TextView
+                    android:text="03357957744"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:id="@+id/bottomPhone">
+
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bottomGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phonelayout"
+                android:text="Male, 21"
+                android:textSize="14dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quote">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/bottomBio"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textColor="#000"
+            android:paddingBottom="25dp"
+            >
+
+
+
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="300dp"
+        android:padding="8dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dd"
+            android:id="@+id/profile_image"
+            android:layout_toRightOf="@+id/message_show"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_show"
+            android:text="HELLLOOOO"
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:background="@drawable/chat_back_right"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            >
+
+        </TextView>
+
+        <ImageView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seenicon"
+            android:id="@+id/tickIcon"
+
+            android:layout_toLeftOf="@+id/message_show"
+            android:layout_centerVertical="true"
+
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

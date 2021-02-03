@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#00D664</color>
+    <color name="colorAccent">#00D664</color>
+    <color name="blackColor">#000</color>
+    <color name="whiteLight">#FFFFFF</color>
+    <color name="radioSelect">#E9F9F0</color>
+    <color name="rectField"> #F6F6F6</color>
+    <color name="credentialsColor"> #29DC7C</color>
+
+
+</resources>
